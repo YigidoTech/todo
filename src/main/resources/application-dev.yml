@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: todo
+#  profiles:
+#    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/todo?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: mysql
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    change-log: classpath:db/master.xml
+    enabled: true
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 8080
