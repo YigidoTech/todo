@@ -16,7 +16,7 @@ spring:
     console:
       enabled: true
   liquibase:
-    change-log: classpath:db/master.xml
+    change-log: classpath:db/changelog-master.xml
     enabled: true
   config:
     activate:

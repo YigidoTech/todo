@@ -9,7 +9,16 @@
             <column  name="id"  type="bigint" autoIncrement="true">
                 <constraints  nullable="false"  primaryKey="true"  unique="true"/>
             </column>
-            <column  name="first-name"  type="varchar(20)">
+            <column  name="firstName"  type="varchar(20)">
+                <constraints  nullable="false"/>
+            </column>
+            <column  name="lastName"  type="varchar(20)">
+                <constraints  nullable="false"/>
+            </column>
+            <column  name="userName"  type="varchar(20)">
+                <constraints  nullable="false"/>
+            </column>
+            <column  name="password"  type="varchar(20)">
                 <constraints  nullable="false"/>
             </column>
         </createTable>
