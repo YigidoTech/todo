@@ -6,7 +6,6 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.MappedSuperclass;
 
 @Mapper(componentModel = "spring")
 @Component

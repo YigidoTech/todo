@@ -5,4 +5,6 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
     <include  file="db/changelog/0001_create_user_table.xml"/>
+    <include  file="db/changelog/0002_create_authority_table.xml"/>
+    <include  file="db/changelog/0003_create_authority_rule_table.xml"/>
 </databaseChangeLog>
