@@ -4,13 +4,22 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
-    <changeSet  author="Korkmaz"  id="changelog-0.0.0.1">
-        <createTable  tableName="user">
-            <column  name="id"  type="bigint" autoIncrement="true">
-                <constraints  nullable="false"  primaryKey="true"  unique="true"/>
+    <changeSet author="Korkmaz" id="changelog-0.0.0.1">
+        <createTable tableName="user">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true" unique="true"/>
             </column>
-            <column  name="first-name"  type="varchar(20)">
-                <constraints  nullable="false"/>
+            <column name="first_name" type="varchar(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_name" type="varchar(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="varchar(20)">
+                <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
